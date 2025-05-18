@@ -1,0 +1,112 @@
+* {
+    font-family: sans-serif;
+}
+
+body {
+    background-color: orange;
+    height: 95vh;
+    width: 95vw;
+}
+
+details {
+    cursor: pointer;
+}
+
+h1 {
+    text-align: center;
+}
+
+.container-outros {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    width: 30%;
+    padding: 20px;
+    border-radius: 20px;
+    background-color: white;
+    box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.283);
+    color: black;
+}
+
+.card label{
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.card form{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.card input {
+    border: 0px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid black;
+    outline: none;
+}
+
+.card select {
+    cursor: pointer;
+    padding: 10px;
+}
+
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+input[type="file"] {
+    padding: 10px;
+  }
+
+input[type=number]::-webkit-outer-spin-button,
+input[type=number]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.card input:focus {
+    border-bottom: 1px solid orange;
+}
+
+.card .buttons {
+    display: flex;
+    flex-direction: row; 
+    justify-content: center;
+    gap: 20px;   
+}
+
+.card .buttons button {
+    padding: 15px;
+    border-radius: 10px;
+    font-weight: bold;
+    border: 0px;
+    font-weight: bold;
+    transition: 1s;
+}
+
+.card .buttons button:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.enviar {
+    background-color: rgb(0, 42, 255);
+    color: white;
+}
+
+.enviar:hover {
+    background-color: rgb(2, 34, 160);
+}
